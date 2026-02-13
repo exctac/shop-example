@@ -1,0 +1,421 @@
+[
+  {
+    "model": "order.order",
+    "pk": 1,
+    "fields": {
+      "customer": 1,
+      "created_at": "2026-02-13T15:14:09Z"
+    }
+  },
+  {
+    "model": "order.order",
+    "pk": 2,
+    "fields": {
+      "customer": 2,
+      "created_at": "2026-02-11T15:14:19Z"
+    }
+  },
+  {
+    "model": "order.orderitem",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "order": 1,
+      "quantity": 4,
+      "price": "15000.00"
+    }
+  },
+  {
+    "model": "order.orderitem",
+    "pk": 2,
+    "fields": {
+      "product": 8,
+      "order": 1,
+      "quantity": 4,
+      "price": "52000.00"
+    }
+  },
+  {
+    "model": "order.orderitem",
+    "pk": 3,
+    "fields": {
+      "product": 21,
+      "order": 2,
+      "quantity": 1,
+      "price": "30000.00"
+    }
+  },
+  {
+    "model": "order.orderitem",
+    "pk": 4,
+    "fields": {
+      "product": 2,
+      "order": 1,
+      "quantity": 2,
+      "price": "18000.00"
+    }
+  },
+  {
+    "model": "order.orderitem",
+    "pk": 5,
+    "fields": {
+      "product": 3,
+      "order": 1,
+      "quantity": 2,
+      "price": "20000.00"
+    }
+  },
+  {
+    "model": "order.orderitem",
+    "pk": 6,
+    "fields": {
+      "product": 5,
+      "order": 1,
+      "quantity": 2,
+      "price": "45000.00"
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 1,
+    "fields": {
+      "name": "Бытовая техника",
+      "parent": null,
+      "root": 1
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 2,
+    "fields": {
+      "name": "Стиральные машины",
+      "parent": 1,
+      "root": 1
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 3,
+    "fields": {
+      "name": "Компьютеры",
+      "parent": null,
+      "root": 3
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 4,
+    "fields": {
+      "name": "Ноутбуки",
+      "parent": 3,
+      "root": 3
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 5,
+    "fields": {
+      "name": "Моноблоки",
+      "parent": 3,
+      "root": 3
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 6,
+    "fields": {
+      "name": "17\"",
+      "parent": 4,
+      "root": 3
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 7,
+    "fields": {
+      "name": "19\"",
+      "parent": 4,
+      "root": 3
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 8,
+    "fields": {
+      "name": "Холодильники",
+      "parent": 1,
+      "root": 1
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 9,
+    "fields": {
+      "name": "Телевизоры",
+      "parent": 1,
+      "root": 1
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 10,
+    "fields": {
+      "name": "Однокамерные",
+      "parent": 8,
+      "root": 1
+    }
+  },
+  {
+    "model": "product.category",
+    "pk": 11,
+    "fields": {
+      "name": "Двухкамерные",
+      "parent": 8,
+      "root": 1
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 1,
+    "fields": {
+      "name": "Стиральная машина A",
+      "stock": 7,
+      "price": "15000.00",
+      "category": 1
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 2,
+    "fields": {
+      "name": "Стиральная машина B",
+      "stock": 13,
+      "price": "18000.00",
+      "category": 1
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 3,
+    "fields": {
+      "name": "Стиральная машина C",
+      "stock": 6,
+      "price": "20000.00",
+      "category": 2
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 4,
+    "fields": {
+      "name": "Стиральная машина D",
+      "stock": 12,
+      "price": "22000.00",
+      "category": 2
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 5,
+    "fields": {
+      "name": "Ноутбук E",
+      "stock": 3,
+      "price": "45000.00",
+      "category": 3
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 6,
+    "fields": {
+      "name": "Ноутбук F",
+      "stock": 7,
+      "price": "48000.00",
+      "category": 3
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 7,
+    "fields": {
+      "name": "Ноутбук G",
+      "stock": 6,
+      "price": "50000.00",
+      "category": 4
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 8,
+    "fields": {
+      "name": "Ноутбук H",
+      "stock": 7,
+      "price": "52000.00",
+      "category": 4
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 9,
+    "fields": {
+      "name": "Моноблок I",
+      "stock": 4,
+      "price": "35000.00",
+      "category": 5
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 10,
+    "fields": {
+      "name": "Моноблок J",
+      "stock": 6,
+      "price": "38000.00",
+      "category": 5
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 11,
+    "fields": {
+      "name": "Телевизор K",
+      "stock": 20,
+      "price": "25000.00",
+      "category": 6
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 12,
+    "fields": {
+      "name": "Телевизор L",
+      "stock": 25,
+      "price": "28000.00",
+      "category": 6
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 13,
+    "fields": {
+      "name": "Телевизор M",
+      "stock": 18,
+      "price": "30000.00",
+      "category": 7
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 14,
+    "fields": {
+      "name": "Телевизор N",
+      "stock": 22,
+      "price": "32000.00",
+      "category": 7
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 15,
+    "fields": {
+      "name": "Холодильник O",
+      "stock": 10,
+      "price": "25000.00",
+      "category": 8
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 16,
+    "fields": {
+      "name": "Холодильник P",
+      "stock": 12,
+      "price": "28000.00",
+      "category": 8
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 17,
+    "fields": {
+      "name": "Телевизор Q",
+      "stock": 15,
+      "price": "35000.00",
+      "category": 9
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 18,
+    "fields": {
+      "name": "Телевизор R",
+      "stock": 18,
+      "price": "38000.00",
+      "category": 9
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 19,
+    "fields": {
+      "name": "Холодильник S",
+      "stock": 8,
+      "price": "22000.00",
+      "category": 10
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 20,
+    "fields": {
+      "name": "Холодильник T",
+      "stock": 10,
+      "price": "24000.00",
+      "category": 10
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 21,
+    "fields": {
+      "name": "Холодильник U",
+      "stock": 6,
+      "price": "30000.00",
+      "category": 11
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 22,
+    "fields": {
+      "name": "Холодильник V",
+      "stock": 8,
+      "price": "32000.00",
+      "category": 11
+    }
+  },
+  {
+    "model": "customer.customer",
+    "pk": 1,
+    "fields": {
+      "name": "User 1",
+      "address": "Address 1"
+    }
+  },
+  {
+    "model": "customer.customer",
+    "pk": 2,
+    "fields": {
+      "name": "User 2",
+      "address": "Address 2"
+    }
+  },
+  {
+    "model": "customer.customer",
+    "pk": 3,
+    "fields": {
+      "name": "User 3",
+      "address": "Address 3"
+    }
+  }
+]

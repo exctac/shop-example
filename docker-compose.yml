@@ -1,0 +1,16 @@
+services:
+  backend-api:
+    image: backend-shop-app
+    build: .
+    container_name: backend-shop-api
+    command: python manage.py runserver 0.0.0.0:$DJANGO_PORT_IN
+    volumes:
+      - .:/app
+      - static_volume:/app/collected_static
+    ports:
+      - "${DJANGO_PORT_OUT}:${DJANGO_PORT_IN}"
+    env_file:
+      - .env
+
+volumes:
+  static_volume:
